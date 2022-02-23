@@ -14,7 +14,7 @@ void vul()
 {{
 	size_t *target = (size_t *)(_rtld_global + rtld_offset);
 	*(target) = &win;
-	exit(0); /* should jmp to 0xdeadbeef */
+	exit(0);
 }}
 
 int main()
